@@ -1,6 +1,8 @@
-﻿namespace csharp.GildedRoseUpdater
+﻿using csharp.GildedRoseUpdater.Base;
+
+namespace csharp.GildedRoseUpdater
 {
-    public class GildedRoseBackstagePass : Base.GildedRoseBase
+    public class GildedRoseBackstagePass : GildedRoseBase
     {
         protected override void UpdateQuality(Item item)
         {

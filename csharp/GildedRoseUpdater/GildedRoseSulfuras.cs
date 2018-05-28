@@ -1,6 +1,8 @@
-﻿namespace csharp.GildedRoseUpdater
+﻿using csharp.GildedRoseUpdater.Base;
+
+namespace csharp.GildedRoseUpdater
 {
-    public class GildedRoseSulfuras : Base.GildedRoseBase
+    public class GildedRoseSulfuras : GildedRoseBase
     {
         protected override void UpdateQuality(Item item)
         {
