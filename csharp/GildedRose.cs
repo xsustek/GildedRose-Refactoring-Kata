@@ -16,7 +16,7 @@ namespace csharp
         {
             foreach (var item in items)
             {
-                GildedRoseFactory.GetGildedRose(item).UpdateItem(item);
+                GildedRoseFactory.GetGildedRose(item.Name).UpdateItem(item);
             }
         }
     }

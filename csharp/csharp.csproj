@@ -67,9 +67,11 @@
     <Compile Include="GildedRoseUpdater\GildedRoseBackstagePass.cs" />
     <Compile Include="GildedRoseUpdater\Base\GildedRoseBase.cs" />
     <Compile Include="GildedRoseUpdater\Factory\GildedRoseFactory.cs" />
+    <Compile Include="GildedRoseUpdater\GildedRoseConjured.cs" />
     <Compile Include="GildedRoseUpdater\GildedRoseSulfuras.cs" />
     <Compile Include="GildedRoseTest.cs" />
     <Compile Include="GildedRoseUpdater\Interface\IGildedRose.cs" />
+    <Compile Include="GildedRoseUpdater\Interface\IGildedRoseUpdateQualitySellIn.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

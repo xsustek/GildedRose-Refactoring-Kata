@@ -1,6 +1,10 @@
-﻿namespace csharp.GildedRoseUpdater.Base
+﻿using csharp.GildedRoseUpdater.Interface;
+
+namespace csharp.GildedRoseUpdater.Base
 {
-    public class GildedRoseBase : Interface.IGildedRose
+    public class GildedRoseBase : 
+        IGildedRose,
+        IGildedRoseUpdateQualitySellIn
     {
         public void UpdateItem(Item item)
         {
@@ -8,7 +12,7 @@
             UpdateSellIn(item);
         }
 
-        protected virtual void UpdateQuality(Item item)
+        public virtual void UpdateQuality(Item item)
         {
             if(item.Quality <= 0) return;
             if (item.SellIn > 0)
@@ -21,7 +25,7 @@
             }
         }
 
-        protected virtual void UpdateSellIn(Item item)
+        public virtual void UpdateSellIn(Item item)
         {
             item.SellIn--;
         }

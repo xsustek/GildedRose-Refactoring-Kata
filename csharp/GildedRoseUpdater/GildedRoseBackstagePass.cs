@@ -4,7 +4,7 @@ namespace csharp.GildedRoseUpdater
 {
     public class GildedRoseBackstagePass : GildedRoseBase
     {
-        protected override void UpdateQuality(Item item)
+        public override void UpdateQuality(Item item)
         {
             if (item.SellIn <= 0)
             {
