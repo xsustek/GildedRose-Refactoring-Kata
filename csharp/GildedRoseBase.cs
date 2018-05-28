@@ -6,8 +6,8 @@ namespace csharp
     {
         public void UpdateItem(Item item)
         {
-            UpdateSellIn(item);
             UpdateQuality(item);
+            UpdateSellIn(item);
         }
 
         protected virtual void UpdateQuality(Item item)
