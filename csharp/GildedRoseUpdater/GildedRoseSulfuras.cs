@@ -1,8 +1,6 @@
-﻿using System.Collections.Generic;
-
-namespace csharp
+﻿namespace csharp.GildedRoseUpdater
 {
-    public class GildedRoseSulfuras : GildedRoseBase
+    public class GildedRoseSulfuras : Base.GildedRoseBase
     {
         protected override void UpdateQuality(Item item)
         {

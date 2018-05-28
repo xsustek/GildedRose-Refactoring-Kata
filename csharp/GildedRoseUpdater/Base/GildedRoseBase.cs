@@ -1,8 +1,6 @@
-﻿using System.Collections.Generic;
-
-namespace csharp
+﻿namespace csharp.GildedRoseUpdater.Base
 {
-    public class GildedRoseBase : IGildedRose
+    public class GildedRoseBase : Interface.IGildedRose
     {
         public void UpdateItem(Item item)
         {

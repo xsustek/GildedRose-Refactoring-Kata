@@ -1,11 +1,11 @@
-﻿namespace csharp
+﻿namespace csharp.GildedRoseUpdater.Factory
 {
     public class GildedRoseFactory
     {
         private const string AgedBrie = "Aged Brie";
         private const string BackstagePass = "Backstage passes to a TAFKAL80ETC concert";
         private const string Sulfuras = "Sulfuras, Hand of Ragnaros";
-        public static IGildedRose GetGildedRose(Item item)
+        public static Interface.IGildedRose GetGildedRose(Item item)
         {
             switch (item.Name)
             {
@@ -16,7 +16,7 @@
                 case Sulfuras:
                     return new GildedRoseSulfuras();
                 default:
-                    return new GildedRoseBase();
+                    return new Base.GildedRoseBase();
             }
         }
     }

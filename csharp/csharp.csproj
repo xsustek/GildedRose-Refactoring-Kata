@@ -63,13 +63,13 @@
   <ItemGroup>
     <Compile Include="ApprovalTest.cs" />
     <Compile Include="GildedRose.cs" />
-    <Compile Include="GildedRoseAgedBrie.cs" />
-    <Compile Include="GildedRoseBackstagePass.cs" />
-    <Compile Include="GildedRoseBase.cs" />
-    <Compile Include="GildedRoseFactory.cs" />
-    <Compile Include="GildedRoseSulfuras.cs" />
+    <Compile Include="GildedRoseUpdater\GildedRoseAgedBrie.cs" />
+    <Compile Include="GildedRoseUpdater\GildedRoseBackstagePass.cs" />
+    <Compile Include="GildedRoseUpdater\Base\GildedRoseBase.cs" />
+    <Compile Include="GildedRoseUpdater\Factory\GildedRoseFactory.cs" />
+    <Compile Include="GildedRoseUpdater\GildedRoseSulfuras.cs" />
     <Compile Include="GildedRoseTest.cs" />
-    <Compile Include="IGildedRose.cs" />
+    <Compile Include="GildedRoseUpdater\Interface\IGildedRose.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

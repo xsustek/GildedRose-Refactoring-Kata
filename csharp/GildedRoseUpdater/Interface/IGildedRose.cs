@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace csharp
+﻿namespace csharp.GildedRoseUpdater.Interface
 {
     public interface IGildedRose
     {
