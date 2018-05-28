@@ -210,5 +210,29 @@ namespace csharp
             app.UpdateQuality();
             Assert.That(items[0].SellIn, Is.EqualTo(12));
         }
+
+        [Test]
+        public void ConjuredAgedBrieNormalIncreaseQuality()
+        {
+            IList<Item> items = new List<Item>
+            {
+                new Item {Name = "Conjured Aged Brie", SellIn = 10, Quality = 32},
+            };
+            GildedRose app = new GildedRose(items);
+            app.UpdateQuality();
+            Assert.That(items[0].Quality, Is.EqualTo(33));
+        }
+
+        [Test]
+        public void ConjuredSulfurasNotChangeQuality()
+        {
+            IList<Item> items = new List<Item>
+            {
+                new Item {Name = "Conjured Sulfuras, Hand of Ragnaros", SellIn = 10, Quality = 29},
+            };
+            GildedRose app = new GildedRose(items);
+            app.UpdateQuality();
+            Assert.That(items[0].Quality, Is.EqualTo(29));
+        }
     }
 }
