@@ -8,5 +8,7 @@ namespace csharp.GildedRoseUpdater
         {
             if (item.Quality < 50) item.Quality++;
         }
+
+        public override bool DegradeQuality => false;
     }
 }

@@ -6,16 +6,16 @@ namespace csharp.GildedRoseUpdater
 {
     public class GildedRoseConjured : GildedRoseBase
     {
-        private readonly IGildedRoseUpdateQualitySellIn gildedRose;
+        private readonly IGildeRoseInternal gildedRose;
 
-        internal GildedRoseConjured(IGildedRoseUpdateQualitySellIn gildedRose)
+        internal GildedRoseConjured(IGildeRoseInternal gildedRose)
         {
             this.gildedRose = gildedRose;
         }
 
         public override void UpdateQuality(Item item)
         {
-            Call(() => gildedRose.UpdateQuality(item), 2);
+            Call(() => gildedRose.UpdateQuality(item), gildedRose.DegradeQuality ? 2 : 1);
         }
 
         private void Call(Action action, int count)

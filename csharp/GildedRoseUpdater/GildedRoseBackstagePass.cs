@@ -26,5 +26,7 @@ namespace csharp.GildedRoseUpdater
                 item.Quality++;
             }
         }
+
+        public override bool DegradeQuality => false;
     }
 }

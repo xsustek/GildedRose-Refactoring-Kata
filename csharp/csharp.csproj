@@ -71,7 +71,9 @@
     <Compile Include="GildedRoseUpdater\GildedRoseSulfuras.cs" />
     <Compile Include="GildedRoseTest.cs" />
     <Compile Include="GildedRoseUpdater\Interface\IGildedRose.cs" />
+    <Compile Include="GildedRoseUpdater\Interface\IGildedRoseQualityDegradation.cs" />
     <Compile Include="GildedRoseUpdater\Interface\IGildedRoseUpdateQualitySellIn.cs" />
+    <Compile Include="GildedRoseUpdater\Interface\IGildeRoseInternal.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

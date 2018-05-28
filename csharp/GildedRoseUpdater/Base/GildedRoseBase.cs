@@ -3,8 +3,8 @@
 namespace csharp.GildedRoseUpdater.Base
 {
     public class GildedRoseBase : 
-        IGildedRose,
-        IGildedRoseUpdateQualitySellIn
+        IGildedRose, 
+        IGildeRoseInternal
     {
         public void UpdateItem(Item item)
         {
@@ -29,5 +29,7 @@ namespace csharp.GildedRoseUpdater.Base
         {
             item.SellIn--;
         }
+
+        public virtual bool DegradeQuality => true;
     }
 }
